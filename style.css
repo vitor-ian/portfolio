@@ -680,6 +680,11 @@ p {
 	#about .col-right h1 {
 		text-align: left;
 	}
+
+	#about .colorlink{
+		color: crimson;
+		text-decoration: underline;
+	}
 	/* End About */
 
 	/* contact  */
