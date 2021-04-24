@@ -63,10 +63,37 @@ p {
 	background-color: crimson;
 }
 
-.buttonpro{
+.brand h1 {
+	font-size: 3rem;
+	text-transform: uppercase;
+	color: white;
+}
+.brand h1 span {
+	color: crimson;
+}
+
+.btn {
 	display: inline-block;
 	padding: 10px 30px;
 	color: white;
+	background-color: transparent;
+	border: 2px solid white;
+	font-size: 2rem;
+	text-transform: uppercase;
+	letter-spacing: .1rem;
+	margin-top: 30px;
+	transition: .3s ease;
+	transition-property: background-color, color;
+}
+.btn:hover {
+	color: white;
+	background-color: rgba(255, 255, 255, 0.137);
+}
+
+.btn2 {
+	display: inline-block;
+	padding: 20px 40px;
+	color: black;
 	background-color: transparent;
 	border: 2px solid crimson;
 	font-size: 2rem;
@@ -76,20 +103,20 @@ p {
 	transition: .3s ease;
 	transition-property: background-color, color;
 }
-
-.buttonpro:hover{
+.btn2:hover {
 	color: white;
 	background-color: crimson;
 }
 
-.brand h1 {
-	font-size: 3rem;
-	text-transform: uppercase;
-	color: white;
+.colorlink{
+	color: crimson;
+	text-decoration: underline;
 }
-.brand h1 span {
+
+.colorlink2{
 	color: crimson;
 }
+
 
 /* Header section */
 #header {
@@ -418,13 +445,10 @@ p {
 	transform: scale(1.1);
 }
 
-#projects .project-img .buttonpro {
+#projects .project-img{
 	color: black;
-	margin-bottom: 50px;
-	padding: 10px 20px;
 	font-size: 2rem;
 }
-
 
 /* End Projects section */
 
@@ -454,6 +478,12 @@ p {
 }
 #about .col-right .cta {
 	color: black;
+	margin-bottom: 50px;
+	padding: 10px 20px;
+	font-size: 2rem;
+}
+#about .col-right .cta:hover {
+	color: white;
 	margin-bottom: 50px;
 	padding: 10px 20px;
 	font-size: 2rem;
@@ -527,6 +557,8 @@ p {
 	line-height: 2rem;
 	font-weight: 500;
 }
+
+
 /*End contact Section */
 
 /* Footer */
@@ -622,6 +654,10 @@ p {
 	h1.section-title {
 		font-size: 6rem;
 	}
+	.colorlink{
+		color: crimson;
+		text-decoration: underline;
+	}
 
 	/* Hero */
 	#hero h1 {
@@ -681,10 +717,6 @@ p {
 		text-align: left;
 	}
 
-	#about .colorlink{
-		color: crimson;
-		text-decoration: underline;
-	}
 	/* End About */
 
 	/* contact  */
@@ -719,9 +751,11 @@ p {
 		text-align: left;
 		padding-left: 20px;
 	}
+
 	/* End contact  */
 }
 /* End Media Query For Tablet */
+
 
 /* Media Query For Desktop */
 @media only screen and (min-width: 1200px) {
@@ -753,3 +787,100 @@ p {
 	}
 }
 /* End  Media Query For Desktop */
+
+/*Form*/
+
+.card {
+background: white;
+margin-top: 30px;
+margin-bottom: 30px;
+padding: 40px;
+border-radius: 10px;
+}
+
+.row{
+	padding: 0 20px;
+	display: table;
+	width: 100%;
+}
+
+form{
+	width: 50%;
+	margin: 0 auto;
+	box-shadow: 0px 0px 18px 0 #0000002c;
+}
+input, textarea {
+	width: 100%;
+	padding: 10px;
+	border-radius: 10px;
+	margin-bottom: 1em;
+	font: 2em ;
+	border: 1px solid rgb(196, 196, 196)
+}
+
+label {
+	font-size: 15px;
+	font-weight: bold;
+	padding-bottom: 5px;
+	display: inline-block;
+}
+
+button{
+	display: inline-block;
+	padding: 10px 30px;
+	background-color: crimson;
+	border: 2px solid crimson;
+	color: white;
+	font-weight: bold;
+	font-size: 1,5rem;
+	letter-spacing: .1rem;
+	text-transform: uppercase;
+	transition: .3s ease;
+	transition-property: background-color, color;
+	padding: 15px;
+	text-align: center;
+	width: 100%;
+}
+
+button:hover{
+	color:  white;
+	background-color: rgb(231, 24, 66);
+	cursor: pointer;
+}
+
+input:focus, textarea:focus{
+	border-color: rgb(107, 106, 106) !important;
+	outline: 0;
+}
+
+input:invalid, textarea:invalid{
+	border-color: crimson;
+}
+
+input:valid, textarea:valid{
+	border-color: green;
+}
+
+textarea {
+	resize: none;
+}
+
+.title-form{
+	font-size: 25px;
+	color: black;
+	padding-bottom: 30px;
+}
+
+
+@media screen and (max-width: 768px) {
+	form{
+		width: 100%;
+	}
+
+}
+
+@media screen and (max-width: 600px) {
+	button{
+		width: 100%;
+	}
+}
