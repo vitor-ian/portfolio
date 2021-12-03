@@ -344,6 +344,7 @@ p {
 	position: relative;
 	z-index: 1;
 	overflow: hidden;
+	min-height: 400px;
 }
 #services .service-item::after {
 	content: '';
