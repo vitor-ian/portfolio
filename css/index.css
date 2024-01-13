@@ -786,6 +786,7 @@ padding-bottom: 40px;
     z-index: 3;
     opacity: 1;
     background: #080808;
+    border: 1px solid rgb(3,90,166);
     padding-top: 10px;
     padding-bottom: 10px;
     border-radius: 10px;
@@ -1562,7 +1563,7 @@ For devices with smaller width like mobile phone
                 left: 60px;
                 opacity: .8;
                 transition: all .4s ease;
-                display: none;
+                /* display: none; */
             }
             .blogs{
                 height: auto;
