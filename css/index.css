@@ -1563,7 +1563,7 @@ For devices with smaller width like mobile phone
                 left: 60px;
                 opacity: .8;
                 transition: all .4s ease;
-                /* display: none; */
+                display: none;
             }
             .blogs{
                 height: auto;
