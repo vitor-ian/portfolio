@@ -243,8 +243,8 @@ body{
     font-family: raleway;
     font-weight: 400;
     letter-spacing: 1px;
-    flex-direction: column;
     font-size: 50px;
+    flex-direction: column;
     z-index: 1;
 }
 .header-content-box{
@@ -277,25 +277,26 @@ body{
     opacity: .9;
     text-shadow: 0px 0px 23px rgb(0, 0, 0);
 }
-.header-content .btns-header{
+.btns-header{
     z-index: 2;
     display: flex;
     align-items: center;
     margin-top: 1.2rem;
 }
-.header-content .btns-header .btn-2{
+.btns-header .btn-2{
     border: 1px solid #5d7bb4;
+    font-family: raleway !important;
     transition: .6s ease;
-    color: white;
+    color: white !important;
     padding: .8rem 2.2rem;
     text-decoration: none;
-    font-size: .9rem;
+    font-size: .9rem !important;
     margin-right: 1rem;
 }
-.header-content .btns-header .btn-2:hover{
+.btns-header .btn-2:hover{
     background-color: #8592ad60;
 }
-.header-content .btns-header{
+.btns-header{
     z-index: 2;
     display: flex;
     align-items: center;
@@ -444,7 +445,7 @@ body{
 }
 #about{
     background: rgb(3,90,166);
-    background: linear-gradient(72deg, rgba(3,90,166,1) 8%, rgba(1,1,1,1) 40%);
+    background: linear-gradient(72deg, rgba(3,90,166,1) 0%, rgba(1,1,1,1) 50%);
     display: none;
     width: 100%;
     height: auto;
@@ -475,6 +476,11 @@ body{
     height: auto;
     width: 100%;
     padding: 40px 0 40px 0;
+
+    background-image: url(/images/GUITAR.png);
+    background-repeat: no-repeat;
+    background-position: center right;
+    background-size: auto 100%;
 }
 .about-header{
     height: auto;
@@ -492,7 +498,7 @@ body{
 }
 .about-first-paragraph{
     color: whitesmoke;
-    justify-content: center;
+    /* justify-content: center; */
     font-size: 20px;
     font-family: poppins;
     width: 50%;
@@ -516,14 +522,14 @@ body{
 .about-main{
     display: flex;
     align-items: center;
-    justify-content: center;
+    /* justify-content: center; */
     width: 100vw;
     height: auto;
     padding-left: 50px;
     padding-right: 50px;
     flex-direction: row;
 }
-.about-img img{
+/* .about-img img{
     width: 100%;
     padding: 30px;
     margin-left: 40px;
@@ -535,7 +541,7 @@ body{
     padding: 30px;
     padding-top: 10px;
     border-radius: 40px;
-}
+} */
 
 #about-content a{
     text-decoration: none;
@@ -569,8 +575,8 @@ body{
 }
 .about-first-paragraph {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: start;
+    justify-content: left !important;
     flex-direction:column ;
 }
 .colors{
@@ -808,7 +814,9 @@ body{
 padding-top: 50px;
 padding-bottom: 40px;
 }
-
+.w-100{
+    width: 100% !important;
+}
 .portfolio-text{
     width: 40%;
     padding-left: 1%;
@@ -1496,12 +1504,15 @@ For devices with smaller width like mobile phone
     }
     .about-img img{
         width: 280px;
+        height: 100%;
         padding: 5px;
         margin: 0 !important;
         border-radius: 10%;
     }
     .about-img {
         width: 100%;
+        height: 100vh;
+        background-color: red;
         text-align: center;
         overflow: hidden;
         border-radius: 10%;
@@ -1955,7 +1966,7 @@ for tabs and large phones
         border-radius: 40px;
     }
     .about-img {
-        width: 500px;
+        width: 100%;
         padding: 30px;
         padding-top: 10px;
         border-radius: 40px;
@@ -2287,10 +2298,6 @@ for tabs and large phones
 
 
 @media all and (max-width: 9000px) and (min-width: 1441px){
-    .header-content .btns-header{
-        justify-content: center;
-    }
-
     .portfolio-image img{
         width: 100%;
         position: relative;
@@ -2621,10 +2628,10 @@ textarea {
     width: 95%;
 }
 .animated-button {
-    font-family: raleway;
-    color: white;
+    font-family: raleway !important;
+    color: white !important;
     padding: .8rem 2.2rem;
-    font-size: .9rem;
+    font-size: .9rem !important;
     margin-right: 1rem;
     background: linear-gradient(-30deg, #0e2550 50%, #0b1e42 50%);
     display: inline-block;
