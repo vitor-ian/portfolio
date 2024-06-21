@@ -1,12 +1,6 @@
-/*!
-  * Item: Willy Wonka Theme
-  * Description: Personal Portfolio Website Template
-  * Author/Developer: Sujal
-  * Version: v1
-  */
 @import url('https://fonts.googleapis.com/css?family=Raleway:300&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Monoton&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Poppins:500&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 *{
     padding: 0%;
     margin: 0%;
@@ -258,7 +252,7 @@ body{
 }
 .header-content .hi{
     z-index: 2;
-    font-weight:700;
+    font-weight: 600;
     font-family: poppins;
     font-size: 1.5rem;
     color: #5d7bb4;
@@ -270,12 +264,20 @@ body{
     font-size: 85px;
 }
 .header-content .text-header{
+    font-family: poppins;
+    letter-spacing: 2px;
+    line-height: 18px;
+    font-weight: 200;
     z-index: 2;
     font-size: 16px;
     color: rgb(255, 255, 255);
     max-width: 450px;
     opacity: .9;
     text-shadow: 0px 0px 23px rgb(0, 0, 0);
+}
+
+.header-content .text-header b{
+    font-weight: 400;
 }
 .btns-header{
     z-index: 2;
@@ -292,9 +294,10 @@ body{
     text-decoration: none;
     font-size: .9rem !important;
     margin-right: 1rem;
+    text-transform: uppercase;
 }
 .btns-header .btn-2:hover{
-    background-color: #8592ad60;
+    background-color: #8592ad60 !important;
 }
 .btns-header{
     z-index: 2;
@@ -362,6 +365,7 @@ body{
     text-decoration: none;
     color: white;
     font-size: 30px;
+    font-weight: 500;
     opacity: .7;
     transition: all .4s ease;
 }
@@ -492,8 +496,8 @@ body{
     font-family: raleway;
     color: whitesmoke;
     padding:10px;
-    padding-bottom: 30px;
-    padding-top: 60px;
+    /* padding-bottom: 30px; */
+    /* padding-top: 60px; */
     font-weight: 900;
 }
 .about-first-paragraph{
@@ -501,23 +505,17 @@ body{
     /* justify-content: center; */
     font-size: 20px;
     font-family: poppins;
-    width: 50%;
+    width: 60%;
     padding: 30px;
     font-weight: 400;
 }
 .about-first-paragraph .color{
     font-size: 40px;
 }
-.about-first-line{
-    font-size: 35px;
-    opacity: 1;
-    margin-bottom: 10px;
-    display: block;
-}
 .about-second-line{
     opacity: .8;
     font-size: 18px;
-    font-weight: 200;
+    font-weight: 400;
 }
 .about-main{
     display: flex;
